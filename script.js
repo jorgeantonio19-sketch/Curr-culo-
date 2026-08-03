@@ -85,7 +85,7 @@ placeholder="Nome da empresa">
 
 <label>Data de Início</label>
 
-<input type="month">
+<input type="text" placeholder="mm/aaaa">
 
 </div>
 
@@ -93,7 +93,7 @@ placeholder="Nome da empresa">
 
 <label>Data de Fim</label>
 
-<input type="month">
+<input type="text" placeholder="mm/aaaa">
 
 </div>
 
