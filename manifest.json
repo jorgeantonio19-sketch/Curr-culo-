@@ -1,0 +1,19 @@
+{
+  "name": "Currículo Europass",
+  "short_name": "Currículo",
+  "description": "Ficha de Registo do Colaborador — estilo Europass",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f4f5f7",
+  "theme_color": "#0a4d8c",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
