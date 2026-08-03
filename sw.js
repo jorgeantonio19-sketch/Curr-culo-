@@ -1,4 +1,4 @@
-const CACHE_NAME = "curriculo-europass-v1";
+const CACHE_NAME = "curriculo-europass-v2";
 
 const ASSETS = [
     "./",
