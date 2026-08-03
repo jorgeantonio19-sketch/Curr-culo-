@@ -18,365 +18,203 @@
 
     <!-- Cabeçalho Europass -->
     <div class="europass-header">
-
         <div class="europass-logo">
-
-            <div class="logo-eu">
-                EU
-            </div>
-
+            <div class="logo-eu">EU</div>
             <div>
-
                 <div class="europass-title">
                     euro<span>pass</span>
                 </div>
-
                 <div class="europass-subtitle">
                     União Europeia
                 </div>
-
             </div>
-
         </div>
-
         <div class="form-title">
             Ficha de Registo do Colaborador
         </div>
-
     </div>
 
     <!-- Banner -->
-
     <div class="photo-banner">
-
         <div class="photo-circle" id="photoPreview">
             Sem foto
         </div>
-
         <button
             class="btn-alterar-foto"
             onclick="document.getElementById('fotoInput').click()">
-
             📷 Alterar Foto
-
         </button>
-
         <input
             type="file"
             id="fotoInput"
             accept="image/*"
             style="display:none"
             onchange="previewFoto(this)">
-
     </div>
 
-    <div
-        class="nome-colaborador"
-        id="nomeExibido">
-
+    <div class="nome-colaborador" id="nomeExibido">
         Nome do Colaborador
-
     </div>
 
-    <!-- Informação -->
-
+    <!-- Informação Pessoal -->
     <div class="section">
-
         <div class="section-title">
             1. INFORMAÇÃO PESSOAL
         </div>
 
         <div class="form-row dual-equal">
-
             <div class="form-group">
-
                 <label>Nome Completo</label>
-
                 <input
                     type="text"
                     id="nomeCompleto"
                     placeholder="Nome Completo"
                     oninput="atualizarNome()">
-
             </div>
-
         </div>
 
-        <!-- ALTERAÇÃO -->
-
         <div class="form-row dual-equal">
-
             <div class="form-group">
-
                 <label>Data de Nascimento</label>
-
-                <input
-                    type="date"
-                    id="dataNascimento">
-
+                <input type="date" id="dataNascimento">
             </div>
-
             <div class="form-group">
-
                 <label>Nacionalidade</label>
-
-                <input
-                    type="text"
-                    placeholder="Ex.: Portuguesa">
-
+                <input type="text" placeholder="Ex.: Portuguesa">
             </div>
-
         </div>
+
         <div class="form-row dual-equal">
-
             <div class="form-group large">
-
                 <label>E-mail</label>
-
-                <input
-                    type="email"
-                    placeholder="exemplo@email.com">
-
+                <input type="email" placeholder="exemplo@email.com">
             </div>
-
             <div class="form-group small">
-
                 <label>Telefone / Telemóvel</label>
-
-                <input
-                    type="tel"
-                    placeholder="+351 912 345 678">
-
+                <input type="tel" placeholder="+351 912 345 678">
             </div>
-
         </div>
 
         <div class="form-row">
-
             <div class="form-group full">
-
                 <label>Morada</label>
-
-                <input
-                    type="text"
-                    placeholder="Rua, número, andar...">
-
+                <input type="text" placeholder="Rua, número, andar...">
             </div>
-
         </div>
 
         <div class="form-row">
-
             <div class="form-group large">
-
                 <label>Localidade</label>
-
-                <input
-                    type="text"
-                    placeholder="Cidade">
-
+                <input type="text" placeholder="Cidade">
             </div>
-
             <div class="form-group small">
-
                 <label>Código Postal</label>
-
-                <input
-                    type="text"
-                    placeholder="1000-000">
-
+                <input type="text" placeholder="1000-000">
             </div>
-
         </div>
-
     </div>
 
     <!-- EXPERIÊNCIA -->
-
     <div class="section">
-
         <div class="section-title">
             2. EXPERIÊNCIA PROFISSIONAL
         </div>
 
         <div id="experienciasContainer">
-
             <div class="experiencia-item">
-
                 <div class="form-group full">
-
                     <label>Cargo / Função</label>
-
-                    <input
-                        type="text"
-                        placeholder="Ex: Operador / Técnico">
-
+                    <input type="text" placeholder="Ex: Operador / Técnico">
                 </div>
 
                 <div class="form-group full">
-
                     <label>Empresa / Organização</label>
-
-                    <input
-                        type="text"
-                        placeholder="Nome da empresa">
-
+                    <input type="text" placeholder="Nome da empresa">
                 </div>
 
                 <div class="form-row dual-equal">
-
                     <div class="form-group">
-
                         <label>Data de Início</label>
-
                         <input type="month">
-
                     </div>
-
                     <div class="form-group">
-
                         <label>Data de Fim</label>
-
                         <input type="month">
-
                     </div>
-
                 </div>
 
                 <div class="form-group full">
-
                     <label>Principais Responsabilidades</label>
-
-                    <textarea
-                        placeholder="Descreva as funções anteriores..."></textarea>
-
+                    <textarea placeholder="Descreva as funções anteriores..."></textarea>
                 </div>
-
             </div>
-
         </div>
 
-        <!-- BOTÃO NOVO -->
-
-        <button
-            class="btn-add-full"
-            onclick="adicionarExperiencia()">
-
+        <button class="btn-add-full" onclick="adicionarExperiencia()">
             ➕ Adicionar Experiência
-
         </button>
-
     </div>
 
     <!-- EDUCAÇÃO -->
-
     <div class="section">
-
         <div class="section-title">
             3. EDUCAÇÃO E FORMAÇÃO
         </div>
 
         <div class="form-row">
-
             <div class="form-group">
-
                 <label>Nível de Escolaridade</label>
-
                 <select>
-
                     <option>Selecione uma opção</option>
-
                     <option>Ensino Básico</option>
-
                     <option>Ensino Secundário</option>
-
                     <option>Curso Profissional</option>
-
                     <option>Licenciatura</option>
-
                     <option>Mestrado</option>
-
                     <option>Doutoramento</option>
-
                     <option>Outro</option>
-
                 </select>
-
             </div>
 
             <div class="form-group">
-
                 <label>Instituição de Ensino</label>
-
-                <input
-                    type="text"
-                    placeholder="Nome da escola">
-
+                <input type="text" placeholder="Nome da escola">
             </div>
-
         </div>
+
         <div class="form-row">
-
             <div class="form-group">
-
                 <label>Curso / Área</label>
-
-                <input
-                    type="text"
-                    placeholder="Ex: Técnico de Eletricidade">
-
+                <input type="text" placeholder="Ex: Técnico de Eletricidade">
             </div>
 
             <div class="form-group">
-
                 <label>Ano de Conclusão</label>
-
-                <input
-                    type="number"
-                    placeholder="2022"
-                    min="1950"
-                    max="2030">
-
+                <input type="number" placeholder="2022" min="1950" max="2030">
             </div>
-
         </div>
-
     </div>
 
     <!-- BOTÃO EXPORTAR -->
-
-    <button
-        class="btn-exportar"
-        onclick="exportarPDF()">
-
+    <button class="btn-exportar" onclick="exportarPDF()">
         📄 Exportar PDF
-
     </button>
 
     <div class="footer">
-
         © Jorge Costa — Todos os direitos reservados
-
     </div>
 
 </div>
 
-<!-- JavaScript -->
-
 <script src="script.js"></script>
 
-<!-- Registo do Service Worker para funcionamento offline -->
 <script>
     if ("serviceWorker" in navigator) {
-
         window.addEventListener("load", () => {
-
             navigator.serviceWorker
                 .register("sw.js")
                 .catch((erro) => console.error("Erro ao registar Service Worker:", erro));
-
         });
-
     }
 </script>
 
